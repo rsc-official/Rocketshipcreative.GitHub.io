@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Audition Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h2>🎤 One-on-One Audition Chat</h2>
+    <div id="chat-box"></div>
+
+    <input type="text" id="message-input" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send Message</button>
+
+    <br /><br />
+    <input type="file" id="media-upload" />
+    <button onclick="uploadMedia()">Upload Video/Image</button>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script> 
+
+  <script src="script.js"></script>
+</body>
+</html>
